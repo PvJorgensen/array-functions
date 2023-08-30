@@ -8,19 +8,13 @@ myExtrasInput.addEventListener("change", addExtra);
 
 
 function addExtra() {
-    /* din map kode her... */
+    myExtras.push(myExtrasInput.value);
+    updateExtras();
 }
 
-
-
 function updateExtras() {
-
-
-
-
-    /* din map kode her... */
-
-
+    let extrasHTML = myExtras.map(extra => `<p>${extra}</p>`).join('');
+    myExtrasListElement.innerHTML = extrasHTML;
 }
 
 
