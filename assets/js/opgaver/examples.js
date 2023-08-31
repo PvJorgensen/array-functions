@@ -14,7 +14,7 @@ function addExtra() {
 
 function updateExtras() {
     let extrasHTML = myExtras.map(extra => `<p>${extra}</p>`).join('');
-    myExtrasListElement.innerHTML = extrasHTML;
+    myExtrasListElement.innerHTML = extrasHTML; 
 }
 
 
